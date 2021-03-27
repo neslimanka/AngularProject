@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { from } from 'rxjs';
+import { AlertifyService } from './services/alertify.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { from } from 'rxjs';
     AppRoutingModule,
     FormsModule
   ], 
-  providers: [],
+  providers: [AlertifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
