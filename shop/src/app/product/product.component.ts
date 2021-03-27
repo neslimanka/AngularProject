@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from './product';
+declare let alertify:any;
 
 @Component({
   selector: 'app-product',
@@ -28,6 +29,6 @@ export class ProductComponent implements OnInit {
 
 
   addToCart(product: { name: string; }){
-    alert("Sepete eklendi : "+ product.name);
+    alertify.success(product.name + " Sepete Eklendi");
   }
 }
