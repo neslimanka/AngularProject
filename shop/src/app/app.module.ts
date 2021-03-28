@@ -21,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, //bizim ana modülümüz approutingmodulünü kullanacagını belirtmiş.
     FormsModule,
     HttpClientModule
 
